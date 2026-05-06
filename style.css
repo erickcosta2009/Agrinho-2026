@@ -1,3 +1,81 @@
-;root {
-    --verde-folha: #4caf50
+/* Configurações de Cores e Fontes */
+:root {
+    --verde-folha: #4caf50;
+    --verde-escuro: #2e7d32;
+    --terra: #795548;
+    --bege-claro: #fdfaf6;
+    --texto: #3e2723;
+}
+
+body {
+    background-color: var(--bege-claro);
+    color: var(--texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 8px solid var(--verde-folha);
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 25px; /* Bordas bem arredondadas para ser amigável */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--verde-escuro);
+    border-left: 5px solid var(--terra);
+    padding-left: 15px;
+}
+
+.img-responsiva {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--terra);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--verde-folha);
+    transform: scale(1.05);
+}
+
+.mensagem-suave {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #888;
 }
