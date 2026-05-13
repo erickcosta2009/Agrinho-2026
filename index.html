@@ -2,35 +2,41 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Projeto Agrinho 2026</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Terra - Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header> 
-        <div  class="container">
-            <h1>Semente do Amanhã</h1>
-            <p>Cultivando o equilíbrio entre a produção e natureza</p>
-        </div>
+    <header>
+        <h1>Cultivando com Carinho</h1>
+        <p>Clique nas imagens para explorar nossas raízes</p>
     </header>
 
-<main class="container">
-    <section class="card">
-        <h2>Nossa Missão Humana</h2>
-        <p>Mais do que máquinas, o agro é feito por pessoa. Sustentabilidade é garantir que a terra que nos alimenta hoje continue viva para as próximas gerações.</p>
-<img src="https://img.freepik.com/fotos-premium/plantacao-de-milho-com-lindo-por-do-sol_146714-1596.jpg" alt="Plantação verde ao pôr so plantacao-de-milho-com-lindo-por-do-sol_146714-1596"
-    </section>
-    <section class="card">
-        <h2>Pequenas Ações, Grandes Futuros</h2>
-        <p>Clique no botão abaixo para ver uma dica de como podemos ajudar o meio ambiente no campo.</p>
-<button> Ver Dica De Sustentabilidade</button>
+    <main class="container">
+        <section class="galeria-humana">
+            <div class="foto-card" onclick="abrirFoto('img1')">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=500&q=80" alt="Plantação" id="img1">
+                <div class="legenda">O ciclo da água no campo</div>
+            </div>
 
-    </section>
-</main>
-<footer>
-<p> Projeto Desenvolvido Para o Concurso Agrinho 2026</p>
-</footer>
-<script src="script.js"></script>
+            <div class="foto-card" onclick="abrirFoto('img2')">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=500&q=80" alt="Mãos na terra" id="img2">
+                <div class="legenda">O toque humano na semente</div>
+            </div>
+        </section>
+
+        <div id="janelaGrande" class="overlay" onclick="fecharFoto()">
+            <span class="fechar">&times;</span>
+            <img class="conteudo-grande" id="fotoExpandida">
+            <div id="legendaGrande"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projeto Agrinho - Equilíbrio e Sustentabilidade</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html
+</html>
