@@ -5,59 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav>
-            <h1>Agro Forte</h1>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Agro Forte</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Bem-vindo à Agro Forte</h2>
-        <p>Qualidade e tecnologia no agronegócio</p>
-        <button id="saibaMaisBtn">Saiba Mais</button>
+        <div class="hero-content">
+            <h1>Transformando o Agronegócio com Inovação</h1>
+            <p>Qualidade, sustentabilidade e tecnologia ao alcance do seu negócio.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1592928308883-5cb3f5b91a54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmaWVsZHxlbnwwfHx8fDE2OTI1ODQxMzY&ixlib=rb-4.0.3&q=80&w=1080" alt="Agronegócio">
+        </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma empresa dedicada a melhorar o agronegócio com soluções inovadoras e sustentáveis.</p>
-    </section>
-
-    <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produtos-container">
-            <div class="produto">
-                <h3>Produto 1</h3>
-                <p>Descrição do produto 1.</p>
-            </div>
-            <div class="produto">
-                <h3>Produto 2</h3>
-                <p>Descrição do produto 2.</p>
-            </div>
-            <div class="produto">
-                <h3>Produto 3</h3>
-                <p>Descrição do produto 3.</p>
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Agro Forte é líder em soluções inovadoras para o agronegócio, oferecendo produtos e serviços que aumentam a produtividade de forma sustentável e eficiente.</p>
+            <div class="cards-sobre">
+                <div class="card">
+                    <h3>Missão</h3>
+                    <p>Promover tecnologia sustentável no campo e gerar valor para produtores e consumidores.</p>
+                </div>
+                <div class="card">
+                    <h3>Visão</h3>
+                    <p>Ser referência nacional em inovação agrícola e sustentabilidade no agronegócio.</p>
+                </div>
+                <div class="card">
+                    <h3>Valores</h3>
+                    <p>Inovação, Sustentabilidade, Transparência e Compromisso com o campo.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="contatoForm">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Produtos Section -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1585325701937-37c3c1a21e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Produto 1">
+                    <h3>Produto 1</h3>
+                    <p>Alta performance para o seu cultivo, aumentando produtividade e qualidade.</p>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1592928308883-5cb3f5b91a54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Produto 2">
+                    <h3>Produto 2</h3>
+                    <p>Solução sustentável e inovadora para o manejo eficiente da produção agrícola.</p>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1560179707-9be5939d2e9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Produto 3">
+                    <h3>Produto 3</h3>
+                    <p>Tecnologia de ponta que transforma o campo em um ambiente mais produtivo.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contatoForm">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
     </footer>

@@ -1,15 +1,11 @@
-// Scroll suave para seção
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+// Scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-});
-
-// Botão "Saiba Mais"
-document.getElementById('saibaMaisBtn').addEventListener('click', () => {
-    document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
 });
 
 // Formulário simples
@@ -17,4 +13,12 @@ document.getElementById('contatoForm').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Mensagem enviada com sucesso!');
     this.reset();
+});
+
+// Menu hamburger mobile
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
