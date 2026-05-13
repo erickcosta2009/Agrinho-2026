@@ -1,42 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Terra - Agrinho 2026</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agro Forte</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <h1>Cultivando com Carinho</h1>
-        <p>Clique nas imagens para explorar nossas raízes</p>
+        <nav>
+            <h1>Agro Forte</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="galeria-humana">
-            <div class="foto-card" onclick="abrirFoto('img1')">
-                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=500&q=80" alt="Plantação" id="img1">
-                <div class="legenda">O ciclo da água no campo</div>
-            </div>
+    <section id="home" class="hero">
+        <h2>Bem-vindo à Agro Forte</h2>
+        <p>Qualidade e tecnologia no agronegócio</p>
+        <button id="saibaMaisBtn">Saiba Mais</button>
+    </section>
 
-            <div class="foto-card" onclick="abrirFoto('img2')">
-                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=500&q=80" alt="Mãos na terra" id="img2">
-                <div class="legenda">O toque humano na semente</div>
-            </div>
-        </section>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa dedicada a melhorar o agronegócio com soluções inovadoras e sustentáveis.</p>
+    </section>
 
-        <div id="janelaGrande" class="overlay" onclick="fecharFoto()">
-            <span class="fechar">&times;</span>
-            <img class="conteudo-grande" id="fotoExpandida">
-            <div id="legendaGrande"></div>
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-container">
+            <div class="produto">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1.</p>
+            </div>
+            <div class="produto">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2.</p>
+            </div>
+            <div class="produto">
+                <h3>Produto 3</h3>
+                <p>Descrição do produto 3.</p>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contatoForm">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <p>Projeto Agrinho - Equilíbrio e Sustentabilidade</p>
+        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
