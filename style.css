@@ -79,11 +79,9 @@ nav a:hover{
 }
 
 .hero-text{
-
   max-width:850px;
-  color:white;
+  color:#3f5c43;
 }
-
 .hero-text span{
 
   background:rgba(255,255,255,.15);
