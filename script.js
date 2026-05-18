@@ -2,7 +2,7 @@
 //       SCRIPT.JS
 // =========================
 
-// animação suave ao descer
+// ANIMAÇÕES
 
 const elementos = document.querySelectorAll(
   ".texto, .imagem-lateral, .flip-card, .caixa-reflexao"
@@ -31,7 +31,7 @@ window.addEventListener("scroll", aparecerNaTela);
 aparecerNaTela();
 
 
-// efeito do menu
+// HEADER
 
 const header = document.querySelector("header");
 
@@ -40,13 +40,99 @@ window.addEventListener("scroll", () => {
   if(window.scrollY > 50){
 
     header.style.background = "#f5f2ebee";
-    header.style.backdropFilter = "blur(5px)";
-    header.style.boxShadow = "0 2px 10px rgba(0,0,0,.05)";
 
   } else {
 
     header.style.background = "#f5f2eb";
-    header.style.boxShadow = "none";
+
+  }
+
+});
+
+
+// MENU ACESSIBILIDADE
+
+const botaoAcesso = document.getElementById("acessibilidade-btn");
+
+const menuAcesso = document.getElementById("menu-acessibilidade");
+
+botaoAcesso.addEventListener("click", () => {
+
+  if(menuAcesso.style.display === "flex"){
+
+    menuAcesso.style.display = "none";
+
+  } else {
+
+    menuAcesso.style.display = "flex";
+
+  }
+
+});
+
+
+// FONTE
+
+let tamanhoFonte = 100;
+
+function aumentarFonte(){
+
+  tamanhoFonte += 10;
+
+  document.body.style.fontSize = tamanhoFonte + "%";
+}
+
+function diminuirFonte(){
+
+  tamanhoFonte -= 10;
+
+  document.body.style.fontSize = tamanhoFonte + "%";
+}
+
+
+// CONTRASTE
+
+function alternarContraste(){
+
+  document.body.classList.toggle("contraste");
+}
+
+
+// LEITOR
+
+let leituraAtiva = false;
+
+function ativarLeitura(){
+
+  leituraAtiva = !leituraAtiva;
+
+  if(leituraAtiva){
+
+    alert("Passe o mouse sobre os textos.");
+
+  } else {
+
+    speechSynthesis.cancel();
+
+  }
+
+}
+
+document.addEventListener("mouseover", (evento) => {
+
+  if(!leituraAtiva) return;
+
+  const texto = evento.target.innerText;
+
+  if(texto && texto.length < 300){
+
+    speechSynthesis.cancel();
+
+    const fala = new SpeechSynthesisUtterance(texto);
+
+    fala.lang = "pt-BR";
+
+    speechSynthesis.speak(fala);
 
   }
 

@@ -18,7 +18,7 @@ body{
   color:#2f312f;
 }
 
-/* MENU */
+/* HEADER */
 
 header{
 
@@ -49,14 +49,12 @@ header{
   align-items:center;
 
   gap:12px;
-
-  margin-left:-10px;
 }
 
 .logo img{
 
-  width:128px;
-  height:128px;
+  width:48px;
+  height:48px;
 
   object-fit:contain;
 }
@@ -66,11 +64,9 @@ header{
   color:#3f5c43;
 
   font-size:28px;
-
-  font-weight:700;
 }
 
-/* MENU LINKS */
+/* MENU */
 
 nav{
 
@@ -101,7 +97,12 @@ nav a:hover{
 
   height:100vh;
 
-  background:#dde8dc;
+  background:
+  linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+  url('img/soja.jpg');
+
+  background-size:cover;
+  background-position:center;
 
   display:flex;
   justify-content:center;
@@ -116,12 +117,12 @@ nav a:hover{
 
   max-width:850px;
 
-  color:#3f5c43;
+  color:white;
 }
 
 .hero-text span{
 
-  background:#c7d8c8;
+  background:rgba(255,255,255,.15);
 
   padding:10px 18px;
 
@@ -135,8 +136,6 @@ nav a:hover{
   font-size:72px;
 
   margin:30px 0;
-
-  line-height:1.1;
 }
 
 .hero-text p{
@@ -184,8 +183,20 @@ nav a:hover{
   width:100%;
 
   border-radius:20px;
+}
 
-  box-shadow:0 10px 30px rgba(0,0,0,.12);
+.fonte-img{
+
+  margin-top:10px;
+
+  font-size:13px;
+}
+
+.fonte-img a{
+
+  color:#4c684f;
+
+  text-decoration:none;
 }
 
 /* FRASE */
@@ -230,8 +241,6 @@ nav a:hover{
 
   margin-top:15px;
   margin-bottom:60px;
-
-  color:#666;
 }
 
 /* CARDS */
@@ -244,8 +253,6 @@ nav a:hover{
 
   gap:30px;
 }
-
-/* CARD VIRAR */
 
 .flip-card{
 
@@ -287,8 +294,6 @@ nav a:hover{
   overflow:hidden;
 
   backface-visibility:hidden;
-
-  -webkit-backface-visibility:hidden;
 }
 
 .flip-card-front img{
@@ -319,23 +324,27 @@ nav a:hover{
 
 .flip-card-back h3{
 
-  font-size:28px;
+  font-size:22px;
 
-  margin-bottom:20px;
+  margin-bottom:15px;
 }
 
 .flip-card-back p{
+
+  font-size:15px;
 
   line-height:1.8;
 
   margin-bottom:20px;
 }
 
-.flip-card-back span{
+.flip-card-back a{
 
-  opacity:.8;
+  color:white;
 
-  font-size:14px;
+  text-decoration:none;
+
+  font-size:12px;
 }
 
 /* REFLEXÃO */
@@ -350,15 +359,13 @@ nav a:hover{
 
 .caixa-reflexao{
 
-  background:#ffffff;
+  background:white;
 
   max-width:900px;
 
   padding:60px;
 
   border-radius:20px;
-
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .caixa-reflexao h2{
@@ -392,7 +399,7 @@ footer{
   padding:35px;
 }
 
-/* ANIMAÇÃO */
+/* ANIMAÇÕES */
 
 .texto,
 .imagem-lateral,
@@ -413,54 +420,88 @@ footer{
   transform:translateY(0);
 }
 
-/* RESPONSIVO */
+/* BOTÃO ACESSIBILIDADE */
 
-@media(max-width:1000px){
+#acessibilidade-btn{
 
-  .projeto{
+  position:fixed;
 
-    grid-template-columns:1fr;
-  }
+  right:20px;
+  bottom:20px;
 
-  .cards{
+  z-index:9999;
 
-    grid-template-columns:1fr;
-  }
+  background:#4c684f;
 
+  color:white;
+
+  border:none;
+
+  padding:14px 18px;
+
+  border-radius:14px;
+
+  cursor:pointer;
 }
 
-@media(max-width:768px){
+#menu-acessibilidade{
 
-  nav{
+  position:fixed;
 
-    display:none;
-  }
+  right:20px;
+  bottom:85px;
 
-  .hero-text h1{
+  background:white;
 
-    font-size:46px;
-  }
+  border-radius:18px;
 
-  .hero-text p{
+  padding:15px;
 
-    font-size:18px;
-  }
+  width:230px;
 
-  .galeria h2,
-  .texto h2,
-  .caixa-reflexao h2{
+  display:none;
 
-    font-size:38px;
-  }
+  flex-direction:column;
 
-  .frase p{
+  gap:10px;
 
-    font-size:25px;
-  }
+  z-index:9999;
+}
 
-  .caixa-reflexao{
+#menu-acessibilidade button{
 
-    padding:35px;
-  }
+  border:none;
 
+  background:#dde8dc;
+
+  padding:12px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+}
+
+/* CONTRASTE */
+
+body.contraste{
+
+  background:black;
+
+  color:white;
+}
+
+body.contraste header{
+
+  background:#111;
+}
+
+body.contraste .caixa-reflexao{
+
+  background:#111;
+}
+
+body.contraste nav a,
+body.contraste .logo h2{
+
+  color:white;
 }
