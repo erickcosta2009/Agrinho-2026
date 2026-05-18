@@ -397,5 +397,28 @@ footer{
   .frase p{
     font-size:25px;
   }
+/* LOGO */
 
+.logo{
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+}
+
+.logo img{
+
+  width:35px;
+  height:35px;
+
+  object-fit:contain;
+}
+
+.logo h2{
+
+  font-size:26px;
+
+  color:#3f5c43;
+}
 }
