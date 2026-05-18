@@ -1,249 +1,235 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AgroFonte</title>
+  <title>Raízes do Paraná | Agrinho 2026</title>
+
+  <link rel="stylesheet" href="style.css"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-
-    <div class="logo">🌱 AgroFonte</div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      🌱 <span>Raízes do Paraná</span>
+    </div>
 
     <nav>
-      <a href="#missao">Missão</a>
-      <a href="#pilares">Pilares</a>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#valores">Valores</a>
       <a href="#impacto">Impacto</a>
-
-      <button class="btn btn-green">
-        Contato
-      </button>
+      <a href="#contato" class="btn-nav">Contato</a>
     </nav>
-
   </header>
 
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
 
     <div class="hero-content">
-
       <h1>
-        Agro Forte, Futuro Sustentável
+        Agricultura Forte,<br>
+        Futuro Sustentável
       </h1>
 
       <p>
-        O equilíbrio perfeito entre produção agrícola e preservação do meio ambiente
+        Valorizando o campo, preservando a natureza
+        e construindo um Paraná mais sustentável.
       </p>
 
       <div class="hero-buttons">
-
-        <button class="btn btn-green">
-          Saiba Mais
-        </button>
-
-        <button class="btn btn-outline">
-          Nossa Visão
-        </button>
-
+        <button class="btn-primary">Conhecer Projeto</button>
+        <button class="btn-secondary">Nossa Missão</button>
       </div>
-
     </div>
-
   </section>
 
-  <section class="mission" id="missao">
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
 
-    <div>
+    <div class="sobre-text">
+      <span class="tag">🌿 AGRINHO 2026</span>
 
       <h2>Nossa Missão</h2>
 
       <p>
-        Promover uma agricultura que alimenta o mundo de hoje sem comprometer os recursos das gerações futuras.
+        O projeto Raízes do Paraná busca mostrar como
+        a agricultura pode evoluir sem prejudicar o meio ambiente.
       </p>
 
       <p>
-        Através de práticas inovadoras, tecnologia de ponta e respeito profundo pela natureza, estamos construindo um modelo agrícola sustentável.
+        Através da tecnologia, do respeito à natureza e
+        da conscientização, podemos unir produtividade,
+        sustentabilidade e qualidade de vida.
       </p>
 
+      <p>
+        Nosso objetivo é incentivar práticas conscientes
+        que ajudem produtores, consumidores e futuras gerações.
+      </p>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop">
+    <div class="sobre-image">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop" alt="">
+    </div>
 
   </section>
 
-  <section id="pilares">
+  <!-- CARDS -->
+  <section class="cards-section" id="valores">
 
-    <div class="section-title">
-
-      <h2>
-        Os Três Pilares da Sustentabilidade
-      </h2>
-
+    <div class="title">
+      <h2>Os Pilares da Sustentabilidade</h2>
       <p>
-        Nossa abordagem integrada garante equilíbrio entre produtividade, conservação e inovação
+        Pequenas ações geram grandes mudanças no futuro.
       </p>
-
     </div>
 
     <div class="cards">
 
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=1200&auto=format&fit=crop">
 
+        <div class="card-content">
+          <h3>Uso Inteligente da Água</h3>
+
+          <p>
+            Sistemas de irrigação consciente ajudam a evitar desperdícios
+            e preservam recursos naturais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
         <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
-
-          <h3>Gestão Inteligente</h3>
+          <h3>Preservação Ambiental</h3>
 
           <p>
-            Uso eficiente de água, irrigação de precisão e monitoramento constante do solo.
+            O equilíbrio entre produção agrícola e natureza
+            garante um futuro melhor para todos.
           </p>
-
         </div>
-
       </div>
 
       <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="card-content">
-
-          <h3>Conservação</h3>
-
-          <p>
-            Preservação de áreas naturais e integração com habitats sustentáveis.
-          </p>
-
-        </div>
-
-      </div>
-
-      <div class="card">
-
-        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop">
 
         <div class="card-content">
-
-          <h3>Energia Renovável</h3>
+          <h3>Energia Limpa</h3>
 
           <p>
-            Integração de energia solar e práticas de redução de emissões.
+            Fontes renováveis ajudam a reduzir impactos ambientais
+            e fortalecem o desenvolvimento sustentável.
           </p>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
 
-  <section class="impact" id="impacto">
+  <!-- IMPACTO -->
+  <section class="impacto" id="impacto">
 
-    <div class="section-title">
+    <div class="impacto-overlay"></div>
 
-      <h2>Nosso Impacto em Números</h2>
+    <div class="impacto-content">
+
+      <h2>Nosso Impacto</h2>
 
       <p>
-        Resultados concretos que demonstram o poder da agricultura sustentável
+        Resultados que mostram a importância da agricultura sustentável.
       </p>
 
+      <div class="numeros">
+
+        <div class="numero-box">
+          <h3 data-target="40">0</h3>
+          <span>%</span>
+          <p>Aumento em produtividade</p>
+        </div>
+
+        <div class="numero-box">
+          <h3 data-target="65">0</h3>
+          <span>%</span>
+          <p>Economia de água</p>
+        </div>
+
+        <div class="numero-box">
+          <h3 data-target="80">0</h3>
+          <span>%</span>
+          <p>Menos emissão de CO₂</p>
+        </div>
+
+        <div class="numero-box">
+          <h3 data-target="250">0</h3>
+          <span>+</span>
+          <p>Famílias impactadas</p>
+        </div>
+
+      </div>
     </div>
-
-    <div class="stats">
-
-      <div class="stat-box">
-        <h3>40%</h3>
-        <p>Aumento em Produtividade</p>
-      </div>
-
-      <div class="stat-box">
-        <h3>65%</h3>
-        <p>Redução no Uso de Água</p>
-      </div>
-
-      <div class="stat-box">
-        <h3>80%</h3>
-        <p>Menos Emissões de CO₂</p>
-      </div>
-
-      <div class="stat-box">
-        <h3>2.5M</h3>
-        <p>Hectares Preservados</p>
-      </div>
-
-    </div>
-
   </section>
 
-  <section class="cta">
+  <!-- CTA -->
+  <section class="cta" id="contato">
 
-    <h2>
-      Juntos por um Futuro Sustentável
-    </h2>
+    <h2>Juntos por um Futuro Melhor</h2>
 
     <p>
-      Faça parte da transformação e ajude a construir uma agricultura mais forte e sustentável.
+      Cada atitude sustentável ajuda a transformar o campo
+      e proteger o meio ambiente.
     </p>
 
-    <div class="hero-buttons">
-
-      <button class="btn btn-green">
-        Entre em Contato
-      </button>
-
-      <button class="btn btn-outline-green">
-        Baixar Relatório
-      </button>
-
+    <div class="cta-buttons">
+      <button class="btn-primary">Participar</button>
+      <button class="btn-secondary">Saiba Mais</button>
     </div>
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
 
     <div class="footer-grid">
 
       <div>
-
-        <h3>🌱 AgroFonte</h3>
-
+        <h3>🌱 Raízes do Paraná</h3>
         <p>
-          Cultivando o presente, preservando o futuro.
+          Cultivando consciência para um futuro sustentável.
         </p>
-
       </div>
 
       <div>
+        <h4>Navegação</h4>
 
-        <h3>Links Rápidos</h3>
-
-        <a href="#">Missão</a>
-        <a href="#">Pilares</a>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
         <a href="#">Impacto</a>
-        <a href="#">Contato</a>
-
       </div>
 
       <div>
+        <h4>Contato</h4>
 
-        <h3>Contato</h3>
-
-        <p>contato@agrofonte.com.br</p>
-        <p>+55 (11) 99999-9999</p>
-        <p>São Paulo, Brasil</p>
-
+        <p>agrinho2026@email.com</p>
+        <p>Paraná - Brasil</p>
       </div>
 
     </div>
 
+    <div class="copy">
+      © 2026 - Projeto Agrinho Paraná
+    </div>
+
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
