@@ -28,7 +28,7 @@ header{
   background:#f5f2eb;
 
   display:flex;
-  justify-content:space-between;
+justify-content:flex-start;
   align-items:center;
 
   padding:0 8%;
