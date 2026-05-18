@@ -53,12 +53,14 @@ header{
   gap:10px;
 }
 
-.logo img{
+.logo{
 
-  width:150px;
-  height:150px;
+  display:flex;
+  align-items:center;
 
-  object-fit:contain;
+  gap:10px;
+
+  margin-left:-30px;
 }
 
 .logo h2{
