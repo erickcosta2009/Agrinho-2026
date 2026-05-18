@@ -1,32 +1,53 @@
-// script.js
+// =========================
+//       SCRIPT.JS
+// =========================
 
-const counters = document.querySelectorAll("[data-target]");
+// efeito aparecendo suave ao rolar a página
 
-const speed = 200;
+const elementos = document.querySelectorAll(
+  ".texto, .imagem-lateral, .flip-card, .caixa-reflexao"
+);
 
-counters.forEach(counter => {
+function aparecerNaTela() {
 
-  const animate = () => {
+  const alturaTela = window.innerHeight;
 
-    const value = +counter.getAttribute("data-target");
-    const data = +counter.innerText;
+  elementos.forEach((elemento) => {
 
-    const time = value / speed;
+    const distanciaTopo = elemento.getBoundingClientRect().top;
 
-    if(data < value){
+    if (distanciaTopo < alturaTela - 100) {
 
-      counter.innerText = Math.ceil(data + time);
-
-      setTimeout(animate, 20);
-
-    } else {
-
-      counter.innerText = value;
+      elemento.classList.add("mostrar");
 
     }
 
-  }
+  });
 
-  animate();
+}
+
+window.addEventListener("scroll", aparecerNaTela);
+
+aparecerNaTela();
+
+
+// efeito leve no menu quando desce a página
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 50){
+
+    header.style.background = "#f5f2ebee";
+    header.style.backdropFilter = "blur(6px)";
+    header.style.boxShadow = "0 2px 10px rgba(0,0,0,.05)";
+
+  } else {
+
+    header.style.background = "#f5f2eb";
+    header.style.boxShadow = "none";
+
+  }
 
 });
