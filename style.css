@@ -196,8 +196,6 @@ nav a:hover{
   color:#666;
 }
 
-/* CARDS */
-
 .cards{
 
   display:grid;
@@ -209,6 +207,8 @@ nav a:hover{
 /* CARD VIRAR */
 
 .flip-card{
+
+  background:transparent;
 
   width:100%;
   height:320px;
@@ -223,7 +223,7 @@ nav a:hover{
   width:100%;
   height:100%;
 
-  transition:transform .8s;
+  transition:transform 0.8s;
 
   transform-style:preserve-3d;
 }
@@ -246,6 +246,8 @@ nav a:hover{
   overflow:hidden;
 
   backface-visibility:hidden;
+
+  -webkit-backface-visibility:hidden;
 }
 
 .flip-card-front img{
@@ -276,7 +278,8 @@ nav a:hover{
 
 .flip-card-back h3{
 
-  font-size:30px;
+  font-size:28px;
+
   margin-bottom:20px;
 }
 
@@ -289,9 +292,9 @@ nav a:hover{
 
 .flip-card-back span{
 
-  font-size:14px;
-
   opacity:.8;
+
+  font-size:14px;
 }
 
 /* REFLEXÃO */
@@ -346,6 +349,27 @@ footer{
   text-align:center;
 
   padding:35px;
+}
+
+/* ANIMAÇÃO */
+
+.texto,
+.imagem-lateral,
+.flip-card,
+.caixa-reflexao{
+
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:all 1s ease;
+}
+
+.mostrar{
+
+  opacity:1;
+
+  transform:translateY(0);
 }
 
 /* RESPONSIVO */
