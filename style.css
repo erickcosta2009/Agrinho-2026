@@ -14,18 +14,21 @@ html{
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#65bd82;
-  color:#ffffff;
+  background:#f5f2eb;
+  color:#2f312f;
+  overflow-x:hidden;
 }
 
-/* HEADER */
+/* ========================= */
+/*          HEADER          */
+/* ========================= */
 
 header{
 
   width:100%;
   height:90px;
 
-  background:#8edb8e;
+  background:#f5f2eb;
 
   display:flex;
   justify-content:space-between;
@@ -35,13 +38,18 @@ header{
 
   position:fixed;
   top:0;
+  left:0;
 
   z-index:1000;
 
   border-bottom:1px solid #ddd;
+
+  transition:.3s;
 }
 
-/* LOGO */
+/* ========================= */
+/*           LOGO           */
+/* ========================= */
 
 .logo{
 
@@ -64,9 +72,13 @@ header{
   color:#3f5c43;
 
   font-size:28px;
+
+  font-weight:700;
 }
 
-/* MENU */
+/* ========================= */
+/*           MENU           */
+/* ========================= */
 
 nav{
 
@@ -79,7 +91,7 @@ nav a{
 
   text-decoration:none;
 
-  color:#ffffff;
+  color:#444;
 
   font-weight:500;
 
@@ -91,7 +103,9 @@ nav a:hover{
   color:#55785b;
 }
 
-/* HERO */
+/* ========================= */
+/*           HERO           */
+/* ========================= */
 
 .hero{
 
@@ -102,6 +116,7 @@ nav a:hover{
   url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600&auto=format&fit=crop');
 
   background-size:cover;
+
   background-position:center;
 
   display:flex;
@@ -122,7 +137,7 @@ nav a:hover{
 
 .hero-text span{
 
-  background:#89ce89;
+  background:rgba(255,255,255,.15);
 
   padding:10px 18px;
 
@@ -136,6 +151,8 @@ nav a:hover{
   font-size:72px;
 
   margin:30px 0;
+
+  line-height:1.1;
 }
 
 .hero-text p{
@@ -145,7 +162,9 @@ nav a:hover{
   line-height:1.8;
 }
 
-/* PROJETO */
+/* ========================= */
+/*         PROJETO          */
+/* ========================= */
 
 .projeto{
 
@@ -183,13 +202,19 @@ nav a:hover{
   width:100%;
 
   border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
+
+/* FONTE DA IMAGEM */
 
 .fonte-img{
 
   margin-top:10px;
 
   font-size:13px;
+
+  color:#666;
 }
 
 .fonte-img a{
@@ -199,7 +224,14 @@ nav a:hover{
   text-decoration:none;
 }
 
-/* FRASE */
+.fonte-img a:hover{
+
+  text-decoration:underline;
+}
+
+/* ========================= */
+/*           FRASE          */
+/* ========================= */
 
 .frase{
 
@@ -219,7 +251,9 @@ nav a:hover{
   font-style:italic;
 }
 
-/* GALERIA */
+/* ========================= */
+/*         GALERIA          */
+/* ========================= */
 
 .galeria{
 
@@ -241,9 +275,13 @@ nav a:hover{
 
   margin-top:15px;
   margin-bottom:60px;
+
+  color:#666;
 }
 
-/* CARDS */
+/* ========================= */
+/*           CARDS          */
+/* ========================= */
 
 .cards{
 
@@ -253,6 +291,8 @@ nav a:hover{
 
   gap:30px;
 }
+
+/* CARD VIRAR */
 
 .flip-card{
 
@@ -294,6 +334,8 @@ nav a:hover{
   overflow:hidden;
 
   backface-visibility:hidden;
+
+  -webkit-backface-visibility:hidden;
 }
 
 .flip-card-front img{
@@ -344,10 +386,23 @@ nav a:hover{
 
   text-decoration:none;
 
+  opacity:.8;
+
   font-size:12px;
+
+  transition:.3s;
 }
 
-/* REFLEXÃO */
+.flip-card-back a:hover{
+
+  opacity:1;
+
+  text-decoration:underline;
+}
+
+/* ========================= */
+/*        REFLEXÃO          */
+/* ========================= */
 
 .reflexao{
 
@@ -359,13 +414,15 @@ nav a:hover{
 
 .caixa-reflexao{
 
-  background:white;
+  background:#ffffff;
 
   max-width:900px;
 
   padding:60px;
 
   border-radius:20px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .caixa-reflexao h2{
@@ -386,7 +443,9 @@ nav a:hover{
   font-size:18px;
 }
 
-/* FOOTER */
+/* ========================= */
+/*          FOOTER          */
+/* ========================= */
 
 footer{
 
@@ -399,7 +458,9 @@ footer{
   padding:35px;
 }
 
-/* ANIMAÇÕES */
+/* ========================= */
+/*        ANIMAÇÕES         */
+/* ========================= */
 
 .texto,
 .imagem-lateral,
@@ -420,7 +481,9 @@ footer{
   transform:translateY(0);
 }
 
-/* BOTÃO ACESSIBILIDADE */
+/* ========================= */
+/*      ACESSIBILIDADE      */
+/* ========================= */
 
 #acessibilidade-btn{
 
@@ -442,6 +505,19 @@ footer{
   border-radius:14px;
 
   cursor:pointer;
+
+  font-size:15px;
+
+  font-family:'Poppins';
+
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+  transition:.3s;
+}
+
+#acessibilidade-btn:hover{
+
+  transform:scale(1.05);
 }
 
 #menu-acessibilidade{
@@ -466,6 +542,8 @@ footer{
   gap:10px;
 
   z-index:9999;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
 #menu-acessibilidade button{
@@ -479,13 +557,24 @@ footer{
   border-radius:10px;
 
   cursor:pointer;
+
+  font-family:'Poppins';
+
+  transition:.3s;
 }
 
-/* CONTRASTE */
+#menu-acessibilidade button:hover{
+
+  background:#c7d8c8;
+}
+
+/* ========================= */
+/*         CONTRASTE        */
+/* ========================= */
 
 body.contraste{
 
-  background:black;
+  background:#000;
 
   color:white;
 }
@@ -495,13 +584,83 @@ body.contraste header{
   background:#111;
 }
 
+body.contraste .hero{
+
+  background:#000;
+}
+
 body.contraste .caixa-reflexao{
+
+  background:#111;
+
+  color:white;
+}
+
+body.contraste .flip-card-back{
 
   background:#111;
 }
 
-body.contraste nav a,
+body.contraste nav a{
+
+  color:white;
+}
+
 body.contraste .logo h2{
 
   color:white;
+}
+
+/* ========================= */
+/*        RESPONSIVO        */
+/* ========================= */
+
+@media(max-width:1000px){
+
+  .projeto{
+
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  nav{
+
+    display:none;
+  }
+
+  .hero-text h1{
+
+    font-size:46px;
+  }
+
+  .hero-text p{
+
+    font-size:18px;
+  }
+
+  .galeria h2,
+  .texto h2,
+  .caixa-reflexao h2{
+
+    font-size:38px;
+  }
+
+  .frase p{
+
+    font-size:25px;
+  }
+
+  .caixa-reflexao{
+
+    padding:35px;
+  }
+
 }
