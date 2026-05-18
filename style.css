@@ -53,8 +53,8 @@ header{
 
 .logo img{
 
-  width: 70 px;
-  height: 70 px;
+  width: 50 px;
+  height: 50 px;
 
   object-fit:contain;
 }
