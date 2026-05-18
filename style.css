@@ -321,21 +321,21 @@ nav a:hover{
 
   font-size:28px;
 
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 
 .flip-card-back p{
 
   line-height:1.8;
 
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 
 .flip-card-back span{
 
   opacity:.8;
 
-  font-size:4px;
+  font-size:14px;
 }
 
 /* REFLEXÃO */
