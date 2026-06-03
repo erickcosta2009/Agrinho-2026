@@ -416,11 +416,11 @@ nav a:hover{
 
   background:#ffffff;
 
-  max-width:300px;
+  max-width:900px;
 
-  padding:20px;
+  padding:60px;
 
-  border-radius:18px;
+  border-radius:20px;
 
   box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
@@ -436,7 +436,7 @@ nav a:hover{
 
 .caixa-reflexao p{
 
-  line-height:300px;
+  line-height:2;
 
   margin-bottom:20px;
 
