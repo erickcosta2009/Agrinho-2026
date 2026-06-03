@@ -416,11 +416,11 @@ nav a:hover{
 
   background:#ffffff;
 
-  max-width:900px;
+  max-width:2px;
 
-  padding:60px;
+  padding:40px;
 
-  border-radius:20px;
+  border-radius:18px;
 
   box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
