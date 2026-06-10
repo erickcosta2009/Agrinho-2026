@@ -1,20 +1,20 @@
-# 🌱 Agrinho 2026 – Entre o Campo e a Cidade
+# 🌱 Agrinho 2026 – Agro Forte e Sustentabilidade Ambiental
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido para o **Programa Agrinho 2026** com o objetivo de mostrar como o campo e a cidade estão conectados e dependem um do outro no dia a dia.
+Este projeto foi desenvolvido para o **Programa Agrinho 2026** com o tema **"Agro Forte"**, destacando a importância da agricultura para a sociedade e a necessidade de preservar o meio ambiente.
 
-Muitas vezes, enxergamos esses dois ambientes como realidades separadas, mas tudo o que consumimos diariamente tem origem no trabalho realizado no campo. Ao mesmo tempo, a cidade contribui com tecnologias, pesquisas e inovações que ajudam a melhorar a produção agrícola e a preservar o meio ambiente.
+O agronegócio é fundamental para a produção de alimentos, geração de empregos e desenvolvimento econômico do país. Porém, para garantir um futuro melhor para as próximas gerações, é essencial que a produção agrícola aconteça de forma sustentável, respeitando a natureza e utilizando os recursos naturais com responsabilidade.
 
-Por meio deste site, buscamos refletir sobre a importância da sustentabilidade e mostrar que pequenas atitudes podem fazer uma grande diferença para o futuro.
+Por meio deste site, buscamos mostrar como o agro pode ser forte e produtivo ao mesmo tempo em que contribui para a preservação do meio ambiente.
 
 ---
 
 ## Por que escolhi esse tema?
 
-Escolhi falar sobre sustentabilidade porque ela está presente em nossas vidas e influencia diretamente o futuro das próximas gerações.
+Escolhi esse tema porque o agronegócio faz parte da vida de todos nós. Os alimentos que consumimos diariamente são resultado do trabalho realizado no campo.
 
-A relação entre o campo e a cidade é essencial para o desenvolvimento da sociedade. Compreender essa conexão nos ajuda a valorizar tanto quem produz os alimentos quanto a importância de preservar os recursos naturais.
+Além disso, a sustentabilidade ambiental é um assunto muito importante, pois a preservação da água, do solo, das florestas e da biodiversidade garante que a produção agrícola continue beneficiando a sociedade sem prejudicar o planeta.
 
 ---
 
@@ -22,29 +22,30 @@ A relação entre o campo e a cidade é essencial para o desenvolvimento da soci
 
 ### 🏡 Início
 
-Uma apresentação do tema principal do projeto e da relação entre campo e cidade.
+Apresentação do tema Agro Forte e sua importância para a produção de alimentos e o desenvolvimento da sociedade.
 
 ### 🌿 Projeto
 
-Explicação sobre a importância da sustentabilidade e os motivos da escolha desse tema.
+Explicação sobre a relação entre o agronegócio e a sustentabilidade ambiental, mostrando como é possível produzir e preservar ao mesmo tempo.
 
 ### 📸 Galeria
 
-Imagens acompanhadas de informações sobre:
+Imagens e informações sobre:
 
+* Conservação dos recursos naturais;
 * Uso consciente da água;
-* Preservação da natureza;
-* Produção sustentável.
+* Preservação das florestas;
+* Produção agrícola sustentável.
 
 ### 💭 Reflexão Final
 
-Uma mensagem sobre a importância de equilibrar desenvolvimento e preservação ambiental para garantir um futuro melhor.
+Uma mensagem sobre a importância de valorizar o agro e cuidar do meio ambiente para construir um futuro mais sustentável.
 
 ---
 
 ## Recursos de Acessibilidade
 
-Pensando em tornar o conteúdo mais acessível para todos, o site possui:
+Pensando em tornar o conteúdo acessível para todos, o site possui:
 
 * Aumento do tamanho da fonte;
 * Redução do tamanho da fonte;
@@ -96,8 +97,4 @@ Projeto desenvolvido para o Programa Agrinho 2026.
 
 ## Considerações Finais
 
-A sustentabilidade não é apenas um tema estudado na escola, mas uma responsabilidade de todos nós. Economizar água, evitar desperdícios e cuidar da natureza são atitudes simples que contribuem para um mundo melhor.
-
-Com este projeto, espero incentivar a reflexão sobre a importância da união entre o campo e a cidade e mostrar que cada pessoa pode colaborar para construir um futuro mais sustentável.
-
-**"Pequenas atitudes podem transformar o futuro."**
+O agro é uma das bases da nossa sociedade e contribui diariamente para a alimentação e o desenvolvimento do país. No entanto, sua força deve caminhar junto com a preservação ambiental. Cuidar da natureza, economizar recursos e adotar práticas sustentáveis são atitudes essenciais para garantir um futuro equilibrado, produtivo e sustentável para todos.
